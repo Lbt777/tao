@@ -1,0 +1,688 @@
+/*会员登录*/
+
+/*中间内容*/
+
+/*响应式*/
+
+/*大屏*/
+@media (min-width:993px ) {
+	.wrap{
+	width: 100%;
+	padding:30px 70px 40px 70px ;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+/*首页 会员中心*/
+.wrap-navigation{
+font-size: 14px;
+color: #000000;
+padding-bottom: 20px;
+line-height: 20px;
+}
+.wrap-navigation a{
+	color: #000000;
+}
+.vip-content .none-fee{
+	width: 65%;
+	float: left;
+	display:inline-block;
+}
+/*限时优惠*/
+.limited-content{
+	border: 1px solid #D9D9D9;
+	padding: 70px 0;
+	text-align: center;
+}
+.limited-content .limited-title{
+	color: #000000;
+	line-height: 20px;
+	font-size: 14px;
+}
+.limited-content .limited-num{
+	color: red;
+	line-height: 60px;
+	font-size: 40px;
+}
+.limited-content .limited-num-s{
+	color: #7D7D7D;
+	line-height: 20px;
+	font-size: 14px;
+	text-decoration: line-through;
+}
+.limited-content .limited-btn{
+	margin: 0 auto;
+	border-radius: 30px;
+	background: #FFAB00;
+	width: 80px;
+	height: 20px;
+	line-height: 20px;
+	color: white;
+	font-size: 12px;
+}
+
+/*支付方式*/
+.payment{
+	display: inline-block;
+}
+.payment .payment-titel{
+	color: #000000;
+	line-height: 20px;
+	font-size: 14px;
+}
+.payment .payment-titel .zf{
+	color: #999999;
+}
+.payment .payment-image{
+	color: #999999;
+}
+.image-l{
+	float: left;
+}
+.login{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	color: white;
+	text-align: center;
+	line-height: 150px;
+	background: url(../img/yinying.png) center 30px no-repeat;
+	background-color: rgba(0,0,0,0.7);
+}
+.log-img{
+	width: 120px;
+	height: 120px;
+}
+.image-l a:hover{
+	color: white;
+}
+.img-r {
+	float: left;
+	text-align: left;
+}
+.img-r-log{
+	text-align: left;
+}
+.img-r .img-r-text{
+	font-size: 20px;
+	color: #BF8B44;
+	line-height: 20px;
+}
+.img-r-text .img-r-text-zf{
+	color: #999999;
+	font-size: 12px;
+	line-height: 12px;
+}
+.img-r-log .img-log-wx{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/weixin.png) no-repeat;
+	background-size: 100%;
+}
+.img-r-textr .img-r-textr-zf{
+	color: orange;
+	font-size: 14px;
+}
+.img-r-textr .btn{
+	margin: 0 auto;
+	background: #e9be76;
+	width: 80px;
+	height: 30px;
+	line-height: 15px;
+	color: white;
+}
+.service-agreement {
+	padding: 20px 0;
+	text-align: center;
+	font-size: 12px;
+	color: #999999;
+}
+/*专项权益*/
+.special-text{
+	font-size: 14px;
+}
+.special img{
+	width: 35px;
+	height: 35px;
+}
+.media-object,.media-object-img{
+	margin-top: -10px;
+}
+.media-object-img-l{
+	margin-top: -120px;
+}
+.media-heading,.media-size{
+	font-size: 14px;
+	color: #252E39;
+}
+.media-body p{
+	font-size: 14px;
+	color: #7C8288;
+}
+/*ZEALER 会员*/
+.vip-content .none-entry{
+	float: right;
+	width: 33%;
+}
+.entry-top{
+	background: url(../img/vip-bg.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 20px 0 20px 40px;
+	color: white;
+}
+.entry-top .top-text{
+	font-size: 16px;
+	line-height: 16px;
+}
+.member-img{
+	width: 60px;
+	height: 60px;
+	float: left;
+	border-radius: 50%;
+}
+.sign-in-text{
+	float: left;
+	font-size: 14px;
+}
+.sign-in-btn{
+	margin-left: -125px;
+	margin-top: 30px;
+    background: #e9be76;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+}
+.sign-in-textb{
+	font-size: 12px;
+	line-height: 20px;
+}
+.entry-botton .entry-text{
+	font-size: 14px;
+	font-weight: 700;
+}
+.r-text{
+	font-size: 14px;
+}
+.r-text1{
+	font-size: 14px;
+	color: #7C8288;
+	line-height: 25px;
+}
+.none-entry-more,.none-entry-more:hover{
+	font-size: 14px;
+	color: #7C8288;
+}
+.member{
+	width: 200px;
+	overflow: hidden;
+}
+
+}
+
+/*中屏*/
+@media (max-width:992px ) and (min-width:769px) {
+	.wrap{
+	width: 100%;
+	padding:30px 50px 40px 50px ;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+/*首页 会员中心*/
+.wrap-navigation{
+font-size: 14px;
+color: #000000;
+padding-bottom: 20px;
+line-height: 20px;
+}
+.wrap-navigation a{
+	color: #000000;
+}
+.vip-content .none-fee{
+	width: 100%;
+	float: left;
+	display:inline-block;
+}
+/*限时优惠*/
+.limited-content{
+	border: 1px solid #D9D9D9;
+	padding: 70px 0;
+	text-align: center;
+}
+.limited-content .limited-title{
+	color: #000000;
+	line-height: 20px;
+	font-size: 14px;
+}
+.limited-content .limited-num{
+	color: red;
+	line-height: 60px;
+	font-size: 40px;
+}
+.limited-content .limited-num-s{
+	color: #7D7D7D;
+	line-height: 20px;
+	font-size: 14px;
+	text-decoration: line-through;
+}
+.limited-content .limited-btn{
+	margin: 0 auto;
+	border-radius: 30px;
+	background: #FFAB00;
+	width: 80px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: white;
+}
+
+/*支付方式*/
+.payment-box{
+	text-align: center;
+}
+.payment{
+	display: inline-block;
+}
+.payment .payment-titel{
+	color: #000000;
+	line-height: 20px;
+	font-size: 14px;
+	text-align: left;
+}
+.payment .payment-titel .zf{
+	color: #999999;
+}
+.payment .payment-image{
+	color: #999999;
+}
+.image-l{
+	float: left;
+}
+.login{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	color: white;
+	text-align: center;
+	line-height: 150px;
+	background: url(../img/yinying.png) center 30px no-repeat;
+	background-color: rgba(0,0,0,0.7);
+}
+.log-img{
+	width: 120px;
+	height: 120px;
+}
+.image-l a:hover{
+	color: white;
+}
+.img-r {
+	float: left;
+	text-align: left;
+}
+.img-r-log{
+	text-align: left;
+}
+.img-r .img-r-text{
+	font-size: 20px;
+	color: #BF8B44;
+	line-height: 20px;
+}
+.img-r-text .img-r-text-zf{
+	color: #999999;
+	font-size: 12px;
+	line-height: 12px;
+}
+.img-r-log .img-log-wx{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/weixin.png) no-repeat;
+	background-size: 100%;
+}
+.img-r-textr .img-r-textr-zf{
+	color: orange;
+	font-size: 14px;
+}
+.img-r-textr .btn{
+	margin: 0 auto;
+	background: #e9be76;
+	width: 80px;
+	height: 30px;
+	line-height: 15px;
+	color: white;
+}
+.service-agreement {
+	padding: 20px 0;
+	text-align: center;
+	font-size: 12px;
+	color: #999999;
+}
+/*专项权益*/
+.special-text{
+	font-size: 14px;
+}
+.special img{
+	width: 35px;
+	height: 35px;
+}
+.media-object,.media-object-img{
+	margin-top: -10px;
+}
+.media-object-img-l{
+	margin-top: -120px;
+}
+.media-heading,.media-size{
+	font-size: 14px;
+	color: #252E39;
+}
+.media-body p{
+	font-size: 14px;
+	color: #7C8288;
+}
+/*ZEALER 会员*/
+.vip-content .none-entry{
+	float: right;
+	width: 100%;
+	padding-top: 20px;
+}
+.entry-top{
+	background: url(../img/vip-bg.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 20px 0 20px 40px;
+	color: white;
+	display: none;
+}
+.entry-top .top-text{
+	font-size: 16px;
+	line-height: 16px;
+}
+.member-img{
+	width: 60px;
+	height: 60px;
+	float: left;
+	border-radius: 50%;
+}
+.sign-in-text{
+	float: left;
+	font-size: 14px;
+}
+.sign-in-btn{
+	margin-left: -125px;
+	margin-top: 30px;
+    background: #e9be76;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+}
+.sign-in-textb{
+	font-size: 12px;
+	line-height: 20px;
+}
+.entry-botton .entry-text{
+	font-size: 16px;
+	font-weight: 700;
+}
+.r-text{
+	font-size: 14px;
+}
+.r-text1{
+	font-size: 14px;
+	color: #7C8288;
+	line-height: 25px;
+}
+.none-entry-more,.none-entry-more:hover{
+	font-size: 14px;
+	color: #7C8288;
+}
+.member{
+	width: 200px;
+	overflow: hidden;
+}
+
+}
+
+/*小屏*/
+@media (max-width: 768px) {
+	.wrap{
+	width: 100%;
+	padding:0.3rem 0.3rem 0.4rem 0.3rem ;
+	margin: 0 auto;
+	padding-bottom: 0.4rem;
+}
+/*首页 会员中心*/
+.wrap-navigation{
+font-size: 0.14rem;
+color: #000000;
+padding-bottom: 0.2rem;
+line-height: 0.2rem;
+}
+.wrap-navigation a{
+	color: #000000;
+}
+.vip-content .none-fee{
+	width: 100%;
+	float: left;
+	display:inline-block;
+}
+/*限时优惠*/
+.limited-content{
+	border: 1px solid #D9D9D9;
+	padding: 0.7rem 0;
+	text-align: center;
+}
+.limited-content .limited-title{
+	color: #000000;
+	line-height: 0.2rem;
+	font-size: 0.14rem;
+}
+.limited-content .limited-num{
+	color: red;
+	line-height: 0.6rem;
+	font-size:0.4rem;
+}
+.limited-content .limited-num-s{
+	color: #7D7D7D;
+	line-height: 0.2rem;
+	font-size: 0.14rem;
+	text-decoration: line-through;
+}
+.limited-content .limited-btn{
+	margin: 0 auto;
+	border-radius: 0.3rem;
+	background: #FFAB00;
+	width: 1rem;
+	height: 0.3rem;
+	line-height:0.3rem;
+	color: white;
+	font-size: 0.12rem;
+}
+
+/*支付方式*/
+.payment-box{
+	text-align: center;
+	display: none;
+}
+.payment{
+	display: inline-block;
+}
+.payment .payment-titel{
+	color: #000000;
+	line-height: 0.2rem;
+	font-size: 0.14rem;
+}
+.payment .payment-titel .zf{
+	color: #999999;
+}
+.payment .payment-image{
+	color: #999999;
+	margin-top: 0.15rem;
+}
+.image-l{
+	float: left;
+}
+.login{
+	position: absolute;
+	width: 1.2rem;
+	height: 1.2rem;
+	color: white;
+	text-align: center;
+	line-height: 1.5rem;
+	background: url(../img/yinying.png) center 0.3rem no-repeat;
+	background-color: rgba(0,0,0,0.7);
+}
+.log-img{
+	width: 1.2rem;
+	height: 1.2rem;
+}
+.image-l a:hover{
+	color: white;
+}
+.img-r {
+	float: left;
+	text-align: left;
+}
+.img-r-log{
+	text-align: left;
+}
+.img-r .img-r-text{
+	font-size: 0.2rem;
+	color: #BF8B44;
+	line-height: 0.2rem;
+}
+.img-r-text .img-r-text-zf{
+	color: #999999;
+	font-size: 0.12rem;
+	line-height: 0.12rem;
+}
+.img-r-log .img-log-wx{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	background: url(../img/weixin.png) no-repeat;
+	background-size: 100%;
+}
+.img-r-textr .img-r-textr-zf{
+	color: orange;
+	font-size: 0.14rem;
+}
+.img-r-textr .btn{
+	margin: 0 auto;
+	background: #e9be76;
+	width: 0.8rem;
+	height: 0.3rem;
+	line-height: 0.15rem;
+	color: white;
+}
+.service-agreement {
+	padding: 0.2rem 0;
+	text-align: center;
+	font-size: 0.12rem;
+	color: #999999;
+	display: none;
+}
+/*专项权益*/
+.special{
+	display: none;
+}
+.special-text{
+	font-size: 0.14rem;
+}
+.special img{
+	width: 0.35rem;
+	height: 0.35rem;
+}
+.media-object,.media-object-img{
+	margin-top: -0.1rem;
+}
+.media-object-img-l{
+	margin-top: -1.2rem;
+}
+.media-heading,.media-size{
+	font-size: 0.14rem;
+	color: #252E39;
+}
+.media-body p{
+	font-size: 0.14rem;
+	color: #7C8288;
+}
+/*ZEALER 会员*/
+.vip-content .none-entry{
+	float: right;
+	width: 100%;
+	padding-top: 0.3rem;
+}
+.entry-top{
+	background: url(../img/vip-bg.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 0.2rem 0 0.2rem 0.4rem;
+	color: white;
+}
+.entry-top .top-text{
+	font-size: 0.16rem;
+	line-height: 0.16rem;
+}
+.member-img{
+	width: 1rem;
+	height: 1rem;
+	float: left;
+	border-radius: 50%;
+}
+.sign-in-text{
+	float: left;
+	width: 2.5rem;
+    height: 0.3rem;
+    font-size: .1rem;
+}
+.sign-in-btn{
+	margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    background: #e9be76;
+    width: 1.5rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    color: white;
+    text-align: center;
+    border-radius: 6rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.1rem;
+}
+.sign-in-textb{
+	font-size: 0.1rem;
+    width: 4rem;
+    height: .3rem;
+    line-height: 0.2rem;
+}
+.entry-botton .entry-text{
+	font-size: 0.14rem;
+	font-weight: 700;
+}
+.r-text{
+	font-size: 0.14rem;
+}
+.r-text1{
+	font-size: 0.14rem;
+	color: #7C8288;
+	line-height: 0.35rem;
+}
+.none-entry-more,.none-entry-more:hover{
+	font-size: 0.14rem;
+	color: #7C8288;
+}
+.member{
+	width: 4rem;
+	overflow: hidden;
+}
+
+}

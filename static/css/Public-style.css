@@ -1,0 +1,369 @@
+/*公共样式*/
+* {
+	padding: 0;
+	box-sizing: border-box;  
+	margin: 0;
+	font-family: "微软雅黑";
+	/*border-box 文本的宽度以border开始*/
+}
+ul li{
+	list-style: none;
+}
+a,a:hover{
+	text-decoration: none;
+	color: black;
+}
+body {
+	font-size: 12px;/*默认字体*/
+	color: #000;
+	font-family:"微软雅黑,arial,helvetica,sans-serif";
+}
+/*清除li样式*/
+ul,li {
+	list-style: none;
+}
+/*左右浮动*/
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/*清除浮动*/
+.clearfix {
+	clear: both; 
+}
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+}
+/*颜色*/
+.text-black{
+	color: #000;
+}
+.text-dark{
+	color: #333;
+}
+.text-main{/*主色调*/
+	color: #ff2d52;
+}
+.text-embel{/*点缀色*/
+	color: #ec193e;
+}
+.text-white{
+	color:#fff;
+}
+/*背景色*/
+.bg-main{/*主色调*/
+	background: #ff2d52;
+}
+.bg-embel{/*点缀色*/
+	background: #ec193e;
+}
+.bg-white{
+	background:#fff;
+}
+/*字体*/
+.font-12{
+	font-size: 12px;
+}
+.font-14{
+	font-size: 14px;
+}
+.font-16{
+	font-size: 16px;
+}
+.font-18{
+	font-size: 18px;
+}
+.font-20{
+	font-size: 20px;
+}
+.font-22{
+	font-size: 22px;
+}
+.font-24{
+	font-size: 24px;
+}
+.font-30{
+	font-size: 30px;
+}
+.font-36{
+	font-size: 36px;
+}
+/*margin*/
+.margin-5 {
+	margin: 5px;
+}
+.margin-5-lr {/*左右*/
+	margin: 0 5px;
+}
+.margin-5-l {/*左*/
+	margin-left: 5px;
+}
+.margin-5-r {/*右*/
+	margin-right: 5px;
+}
+.margin-5-t {/*上*/
+	margin-top: 5px;
+}
+.margin-5-b {/*下*/
+	margin-bottom: 5px;
+}
+.margin-10 {
+	margin: 10px;
+}
+.margin-10-lr {/*左右*/
+	margin: 0 10px;
+}
+.margin-10-l {/*左*/
+	margin-left: 10px;
+}
+.margin-10-r {/*右*/
+	margin-right: 10px;
+}
+.margin-10-t {/*上*/
+	margin-top: 10px;
+}
+.margin-10-b {/*下*/
+	margin-bottom: 10px;
+}
+.margin-15 {
+	margin: 15px;
+}
+.margin-15-lr {/*左右*/
+	margin: 0 15px;
+}
+.margin-15-l {/*左*/
+	margin-left: 15px;
+}
+.margin-15-r {/*右*/
+	margin-right: 15px;
+}
+.margin-15-t {/*上*/
+	margin-top: 15px;
+}
+.margin-15-b {/*下*/
+	margin-bottom: 15px;
+}
+.margin-20 {
+	margin: 20px;
+}
+.margin-20-lr {/*左右*/
+	margin: 0 20px;
+}
+.margin-20-l {/*左*/
+	margin-left: 20px;
+}
+.margin-20-r {/*右*/
+	margin-right: 20px;
+}
+.margin-20-t {/*上*/
+	margin-top: 20px;
+}
+.margin-20-b {/*下*/
+	margin-bottom: 20px;
+}
+.margin-25 {
+	margin: 25px;
+}
+.margin-25-lr {/*左右*/
+	margin: 0 25px;
+}
+.margin-25-l {/*左*/
+	margin-left: 25px;
+}
+.margin-25-r {/*右*/
+	margin-right: 25px;
+}
+.margin-25-t {/*上*/
+	margin-top: 25px;
+}
+.margin-25-b {/*下*/
+	margin-bottom: 25px;
+}
+.margin-30 {
+	margin: 30px;
+}
+.margin-30-lr {/*左右*/
+	margin: 0 30px;
+}
+.margin-30-l {/*左*/
+	margin-left: 30px;
+}
+.margin-30-r {/*右*/
+	margin-right: 30px;
+}
+.margin-30-t {/*上*/
+	margin-top: 30px;
+}
+.margin-30-b {/*下*/
+	margin-bottom: 30px;
+}
+/*padding*/
+.padding-5 {
+	padding: 5px;
+}
+.padding-5-lr {/*左右*/
+	padding: 0 5px;
+}
+.padding-5-l {/*左*/
+	padding-left: 5px;
+}
+.padding-5-r {/*右*/
+	padding-right: 5px;
+}
+.padding-5-t {/*上*/
+	padding-top: 5px;
+}
+.padding-5-b {/*下*/
+	padding-bottom: 5px;
+}
+.padding-10 {
+	padding: 10px;
+}
+.padding-10-lr {/*左右*/
+	padding: 0 10px;
+}
+.padding-10-l {/*左*/
+	padding-left: 10px;
+}
+.padding-10-r {/*右*/
+	padding-right: 10px;
+}
+.padding-10-t {/*上*/
+	padding-top: 10px;
+}
+.padding-10-b {/*下*/
+	padding-bottom: 10px;
+}
+.padding-15 {
+	padding: 15px;
+}
+.padding-15-lr {/*左右*/
+	padding: 0 15px;
+}
+.padding-15-l {/*左*/
+	padding-left: 15px;
+}
+.padding-15-r {/*右*/
+	padding-right: 15px;
+}
+.padding-15-t {/*上*/
+	padding-top: 15px;
+}
+.padding-15-b {/*下*/
+	padding-bottom: 15px;
+}
+.padding-20 {
+	padding: 20px;
+}
+.padding-20-lr {/*左右*/
+	padding: 0 20px;
+}
+.padding-20-l {/*左*/
+	padding-left: 20px;
+}
+.padding-20-r {/*右*/
+	padding-right: 20px;
+}
+.padding-20-t {/*上*/
+	padding-top: 20px;
+}
+.padding-20-b {/*下*/
+	padding-bottom: 20px;
+}
+.padding-25 {
+	padding: 25px;
+}
+.padding-25-lr {/*左右*/
+	padding: 0 25px;
+}
+.padding-25-l {/*左*/
+	padding-left: 25px;
+}
+.padding-25-r {/*右*/
+	padding-right: 25px;
+}
+.padding-25-t {/*上*/
+	padding-top: 25px;
+}
+.padding-25-b {/*下*/
+	padding-bottom: 25px;
+}
+.padding-30 {
+	padding: 30px;
+}
+.padding-30-lr {/*左右*/
+	padding: 0 30px;
+}
+.padding-30-l {/*左*/
+	padding-left: 30px;
+}
+.padding-30-r {/*右*/
+	padding-right: 30px;
+}
+.padding-30-t {/*上*/
+	padding-top: 30px;
+}
+.padding-30-b {/*下*/
+	padding-bottom: 30px;
+}
+/*精灵图*/
+.icon {
+	background: url(../img/icon.png) no-repeat;
+	display: inline-block;
+}
+/*搜索框icon*/
+.icon-seach{
+	background-position: 0 0;
+	width: 14px;
+	height: 15px;
+}
+/*导航分类icon*/
+.icon-all{
+	background-position: -16px 0;/*-15*/
+	width: 20px;/*36*/
+	height: 17px;/*15*/
+}
+.icon-arrow-right{
+	width: 6px;
+	height: 12px;
+	background-position: -44px -3px;
+}
+.
+.sub-child-lists{
+	margin-top: 10px;
+	line-height: 20px;
+}
+.icon-update, .icon-update-active{
+	width: 12px;
+	height: 12px;
+}
+.icon-update{
+	background-position: -56px -2px;
+}
+.icon-update-active{
+	background-position: -74px -2px;
+}
+/*封装图文*/
+.graphic-box{
+	float: left;
+}
+.graphic-box .img, .graphic-box img{
+	width: 100%;
+}
+.graphic-box .title-ellipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+/*封装首页公共title*/
+.common-title{
+	border-bottom: 2px solid #FF2D52;
+	color: #FF2D52;
+	font-size: 24px;
+	line-height: 56px;
+	font-weight: bold;
+}

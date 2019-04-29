@@ -1,0 +1,603 @@
+body{
+	background: #1f1f27;
+}
+.container {
+    padding-right: 0.15rem;
+    padding-left: 0.15rem;
+}
+.font-14 {
+    font-size: 0.14rem;
+}
+.close {
+    font-size: 0.21px;
+}
+.alert-dismissable .close, .alert-dismissible .close {
+    top: -0.02rem;
+    right: -0.21rem;
+}
+.carousel-indicators {
+    bottom: 0.1rem;
+}
+.carousel-indicators .active {
+    width: 0.12rem;
+    height: 0.12rem;
+}
+.carousel-indicators li {
+    width: 0.1rem;
+    height: 0.1rem;
+    margin: 0.01rem;
+    text-indent: -9.99rem;
+    border: 0.01rem solid #fff;
+    border-radius: 0.1rem;
+}
+.carousel-caption {
+    bottom: 0.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    text-shadow: 0 0.01rem 0.02rem rgba(0, 0, 0, .6);
+}
+.carousel-control {
+    font-size: 0.2rem;
+    text-shadow: 0 0.01rem 0.02rem rgba(0, 0, 0, .6);
+}
+.carousel-control .glyphicon-chevron-left {
+    margin-left: -0.1rem;
+}
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+    margin-top: -0.1rem;
+}
+.carousel-control .glyphicon-chevron-right {
+    margin-right: -0.1rem;
+}
+.row {
+    margin-right: -0.15rem;
+    margin-left: -0.15rem;
+}
+.col-md-4, .col-sm-6, .col-xs-12{
+    min-height: 0.01rem;
+    padding-right: 0.15rem;
+    padding-left: 0.15rem;
+}
+.thumbnail {
+    padding: 0.04rem;
+    margin-bottom: 0.2rem;
+    border: 0.01rem solid #ddd;
+    border-radius:0.04rem;
+}
+.font-16{
+	font-size: 0.16rem;
+}
+.font-18{
+	font-size: 0.18rem;
+}
+ul, ol {
+    margin-bottom: 0.1rem;
+}
+@media (max-width: 768px) {
+	.alert.alert-warning.alert-dismissible{
+		display: none;
+	}
+	.alert.alert-warning.alert-dismissible img{
+		width: 0.15rem;
+		height: 0.12rem;
+	}
+	.alert.alert-warning.alert-dismissible a{
+		color: #fff;
+		text-decoration: none;
+		cursor: pointer;
+		line-height: 0.2rem;
+	}
+	.vip-login{
+		display: none;
+	}
+	.font-24.font-w{
+		font-size: 0.2rem;
+	}
+
+}
+@media only screen and (min-width: 992px) {
+	.whole{
+		line-height: 0.45rem!important;
+	}
+}
+@media (min-width: 768px) {
+	.alert.alert-warning.alert-dismissible{
+		color: #fff;
+		background: #33333c;
+		border: none;
+		border-radius: 0;
+		margin-bottom: 0;
+		overflow: hidden;
+		white-space: normal;
+	}
+	.alert.alert-warning.alert-dismissible img{
+		width: 0.15rem;
+		height: 0.12rem;
+	}
+	
+	
+}
+/*vip特权块*/
+.vip-wrapper{
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+	padding: 0 0.3rem;
+	width: 100%;
+	height: 1.0rem;
+	background: #33333c;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.vip-wrapper .vipcenter{
+	position: absolute;
+	left: 0;
+	top: 0.3rem;
+	height: 70%;
+	width: auto;
+}
+.vip-wrapper .text-box span:first-child{
+	color: #d9ac64;
+}
+.text-box{
+	display: inline-block;
+	margin-top: 0.2rem;
+}
+.vip-wrapper .text-box span:last-child{
+	display: block;
+	margin-top: 0.06rem;
+}
+.vip-login{
+	height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background: #d9ac64;
+    float: right;
+    margin-top: 0.25rem;
+    text-align: center;
+}
+.vip-login .vip_arrow{
+	height: 0.3rem;
+	width: 0.3rem;
+	margin-top: 0.1rem;
+}
+
+
+
+
+
+
+.thumbnail img{
+	display: block!important;
+    max-width: 100%!important;
+    height: auto!important;
+    margin-right: auto!important;
+	margin-left: auto!important;
+}
+.alert.alert-warning.alert-dismissible a,.col-sm-6.col-md-4.col-xs-12 a{
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*item样式*/
+.row .thumbnail{
+	border: none;
+	background-color: transparent;
+	position: relative;
+}
+.thumbnail .caption{
+	margin-top: 0.1rem;
+	height: 0.28rem;
+	width: 100%;
+	line-height: 0.28rem;
+	padding-bottom: 0;
+	padding-top: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #727272;
+	padding:0 0.09rem 0 0.09rem;
+}
+.thumbnail .vip-club{
+	height: 0.4rem;
+	width: 1.5rem;
+	background: linear-gradient(139deg, #e9be76 0%, #bf8b44 100%);
+	position: absolute;
+	top: 0.04rem;
+	left: 0.04rem;
+	line-height: 0.4rem;
+    text-align: center;
+    z-index: 11;
+}
+@media (max-width: 360px) {
+	.thumbnail .vip-club{
+		height: 0.3rem;
+		width: 0.7rem;
+		background: linear-gradient(139deg, #e9be76 0%, #bf8b44 100%);
+		position: absolute;
+		top: 0.04rem;
+		left: 0.04rem;
+		line-height: 0.3rem;
+		font-size: 0.12rem;
+	    text-align: center;
+	    z-index: 11;
+	}
+}
+
+/*播放动画*/
+/*大屏*/
+@media (min-width:993px ){
+	/*播放动画*/
+.mover{
+	position: relative;
+	display: inline-block;
+}
+ .list-cover:hover{
+	opacity: 0.4;
+}
+ .list-cover{
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    z-index: 111;
+}
+.mover .animation{
+    width: 26px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: 50%;	
+}
+.right-line{
+	display: none;
+}
+.mover:hover .right-line {
+    display: block;
+    right: 10%;
+    opacity: 0;
+    animation: right-line 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes right-line {
+   from{
+   		transform:rotate(0deg);
+		opacity:0;
+		top: 50%px;
+   }
+   to{
+   		transform:rotate(0deg);	
+		top: 50%;
+		opacity: 1;
+		right: 22%;
+   }
+}
+.left-line{
+    display: none;
+}
+.mover:hover .left-line {
+	display: block;
+    left: 10%;
+    opacity: 0;
+    animation: left-line 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes left-line {
+   from{
+   		transform:rotate(0deg);
+		opacity:0;
+		top: 50%px;
+   }
+   to{
+   		transform:rotate(0deg);	
+		top: 50%;
+		opacity: 1;
+		left: 22%;
+   }
+}
+/*上*/
+.list-play{
+	display: none;
+}
+.mover:hover .list-play {
+    display: box;
+    display: block;
+    width: 70%;
+    height: 26px;
+    position: absolute;
+    left: 50%;
+    margin-left: -6%;
+    top: 70%;
+    opacity: 0;
+    font-size: 18px;
+    color: #fff;
+    animation: list-play 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes list-play {
+   0%{
+   		transform:rotate(0deg);
+		opacity:0;
+		top: 70%;
+   }
+   100%{
+   		transform:rotate(0deg);	
+		top:45%;
+		opacity: 1;
+   }
+}
+
+
+/*更多视频*/
+.whole,.whole:hover{
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #080808;
+	border-radius: 40px;
+	background: #080808;
+	color: white;
+	display: block;
+	width: 200px;
+	height: 50px;
+	font-size: 22px;
+	line-height: 50px;
+	margin-bottom: 10px;
+}
+.whole:hover{
+	background: #363842;
+	border: lpx solid #363842;
+}	
+}
+
+/*中屏*/
+@media (max-width:992px ) and (min-width:769px){
+	/*播放动画*/
+.mover{
+	position: relative;
+	display: inline-block;
+}
+.list-cover:hover{
+	opacity: 0.4;
+}
+ .list-cover{
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    z-index: 111;
+}
+.mover .animation{
+    width: 20px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: 50%;	
+}
+.right-line{
+	display: none;
+}
+.mover:hover .right-line {
+    display: block;
+    right: 10%;
+    opacity: 0;
+    animation: right-line 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes right-line {
+   from{
+   		transform:rotate(0deg);
+		opacity:0;
+		top: 50%px;
+   }
+   to{
+   		transform:rotate(0deg);	
+		top: 50%;
+		opacity: 1;
+		right: 25%;
+   }
+}
+.left-line{
+    display: none;
+}
+.mover:hover .left-line {
+	display: block;
+    left: 10%;
+    opacity: 0;
+    animation: left-line 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes left-line {
+   from{
+   		transform:rotate(0deg);
+		opacity:0;
+		top: 50%px;
+   }
+   to{
+   		transform:rotate(0deg);	
+		top: 50%;
+		opacity: 1;
+		left: 25%;
+   }
+}
+/*上*/
+.list-play{
+	display: none;
+}
+.mover:hover .list-play {
+    display: box;
+    display: block;
+    width: 70%;
+    height: 26px;
+    position: absolute;
+    left: 50%;
+    margin-left: -6%;
+    top: 70%;
+    opacity: 0;
+    font-size: 16px;
+    color: #fff;
+    animation: list-play 1s;s
+    animation-fill-mode: forwards;
+}
+@keyframes list-play {
+   0%{
+   		transform:rotate(0deg);
+		opacity:0;
+		top: 70%;
+   }
+   100%{
+   		transform:rotate(0deg);	
+		top:45%;
+		opacity: 1;
+   }
+}
+/*更多视频*/
+.whole,.whole:hover{
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #080808;
+	border-radius: 40px;
+	background: #080808;
+	color: white;
+	display: block;
+	width: 160px;
+	height: 40px;
+	font-size: 16px;
+	line-height: 39px;
+	margin-bottom: 10px;
+}
+.whole:hover{
+	background: #363842;
+	border: lpx solid #363842;
+}	
+}
+/*小屏*/
+@media (max-width:768px ) {
+	/*播放动画*/
+.mover{
+	position: relative;
+	display: inline-block;
+}
+.list-cover:hover{
+	opacity: 0.4;
+}
+.list-cover{
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    z-index: 111;
+}
+.mover .animation{
+    width: 0.3rem;
+    height: 0.02rem;
+    background: white;
+    position: absolute;
+    top: 50%;	
+}
+.right-line{
+	display: none;
+}
+.mover:hover .right-line {
+    display: block;
+    right: 10%;
+    opacity: 0;
+    animation: right-line 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes right-line {
+   from{
+   		transform:rotate(0deg);
+		opacity:0;
+		top: 50%;
+   }
+   to{
+   		transform:rotate(0deg);	
+		top: 50%;
+		opacity: 1;
+		right: 22%;
+   }
+}
+.left-line{
+    display: none;
+}
+.mover:hover .left-line {
+	display: block;
+    left: 10%;
+    opacity: 0;
+    animation: left-line 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes left-line {
+   from{
+   		transform:rotate(0deg);
+		opacity:0;
+		top: 50%;
+   }
+   to{
+   		transform:rotate(0deg);	
+		top: 50%;
+		opacity: 1;
+		left: 22%;
+   }
+}
+/*上*/
+.list-play{
+	display: none;
+}
+.mover:hover .list-play {
+    display: box;
+    display: block;
+    width: 70%;
+    height: 0.26rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -5%;
+    top: 70%;
+    opacity: 0;
+    font-size: 0.22rem;
+    color: #fff;
+    animation: list-play 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes list-play {
+   0%{
+   		transform:rotate(0deg);
+		opacity:0;
+		top: 70%;
+   }
+   100%{
+   		transform:rotate(0deg);	
+		top:46%;
+		opacity: 1;
+   }
+}
+/*更多视频*/
+.whole,.whole:hover{
+	margin: 0 auto;
+	text-align: center;
+	border: 0.01rem solid #080808;
+	border-radius: 40px;
+	background: #080808;
+	color: white;
+	display: block;
+	width: 1.6rem;
+	height: 0.35rem;
+	font-size: 0.12rem;
+	line-height: 0.31rem;
+	margin-bottom: 0.1rem;
+}
+.whole:hover{
+	background: #363842;
+	border: 0.01rem solid #363842;
+}	
+
+}
