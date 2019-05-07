@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		#demo div{
+			height: 200px;
+			width: 200px;
+		}
+		.red{
+			background: red;
+		}
+		.border{
+			border: 5px solid pink;
+		}
+		.font{
+			font-size: 24px;
+		}
+	</style>
+	<body>
+		<div id="demo">
+			<!--类的绑定     对象   数组-->
+			<!--如果直接添加已有的class用引号-->
+			<div :class="[redclass,size,'border']">aa</div>
+			<!--已对象形式绑定  名称：是否显示-->
+			<div :class="{border:true}">bb</div>
+			<!--classobj是单独的数据  不用加{}-->
+			<div :class="classobj">cc</div>
+			<!--数组绑定  数组中右多少值  类名就有多少-->
+			<div :class="classArray">dd</div>
+			<div :style="{width:w+'px',background:p,fontSize:'50px'}">ee</div>
+		</div>
+	</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+	new Vue({
+		el:'#demo',
+		data:{
+			//先绑定到名称上 在以数组形式添加至class上
+			redclass:'red',
+			size:'font',
+			classobj:{
+				red:true,
+				font:true
+			},
+			classArray:['red','border'],
+			w:500,
+			p:'pink'
+		}
+	})
+</script>

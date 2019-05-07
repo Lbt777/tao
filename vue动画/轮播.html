@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		#demo{
+			position: relative;
+			height: 300px;
+			width: 500px;
+			overflow: hidden;
+		}
+		.slide{
+			height: 300px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+		}
+		img{
+			float: left;
+			height: 100%;
+			width: 500px;
+		}
+		span{
+			cursor: pointer;
+			height: 100px;
+			width: 30px;
+			background: rgba(242,156,177,.5);
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -50px;
+			z-index: 10;
+		}
+		span:nth-last-child(2){
+			right: 0;
+			left: auto;
+		}
+	</style>
+	<body>
+		<div id="demo" ref='cursol' @mouseenter="mouseinnter" @mouseleave="mouseleave">
+			<span @click="changeindex('left')" ></span>
+			<span @click="changeindex('right')"></span>
+			<div class="slide" :style="{width:slideWidth+'px',left:left+'px'}">
+				<!--<img v-for="(item,index) in list" src=></img>-->
+				<img src="img/1.jpg"></img>
+				<img src="img/2.jpg"></img>
+				<img src="img/3.jpg"></img>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+	new Vue({
+		el:'#demo',
+		data:{
+			list:['img/1.jpg',
+				'img/2.jpg',
+				'img/3.jpg'],
+			left:0,
+			imgWidth:0,//图片宽度
+			slideWidth:0,//盒子宽度
+			index:0,
+			timer:null
+		},
+		methods:{
+			//左右点击事件
+			changeindex:function(pos){
+				if(pos==='left' && this.index>0){
+					this.index--
+				}else if(pos==='right' && this.index<=(this.list.length-2)){
+					this.index++
+					console.log(this.index,this.list.length)
+				}
+//				this.left = -(this.index)*this.imgWidth
+			},
+			//自动播放
+			autoplay:function(){
+				//改变left
+				this.timer = setInterval(()=>{
+//					this.left = -(this.index+1)*this.imgWidth
+					this.index++
+					console.log(this.index)
+//					if(this.index>=this.list.length-1){
+//						this.index=-1
+					if(this.index>=this.list.length){
+						this.index=0
+					} 
+				},1000)
+			},
+			mouseinnter:function(){
+				clearInterval(this.timer)
+			},
+			mouseleave:function(){
+				this.autoplay()
+			}
+		},
+		watch:{
+			index:function(val){
+				this.left = -val*this.imgWidth
+			}
+		},
+		computed:{
+//			width:function(){
+//				var slideWidth = document.querySelectorAll('img')[0].width;
+//				return this.list.length*slideWidth+'px';
+//			}
+		},
+		//加载完执行
+		mounted:function(){
+			console.log(this.$refs)
+//			//通过refs拿到cursol
+			var parent = this.$refs.cursol
+//			console.log(parent.offsetWidth)
+//			//图片数组
+			this.list = parent.querySelectorAll('img')
+//			console.log(this.list)
+//			//图片宽度
+			this.imgWidth = this.list[0].offsetWidth
+//			console.log(this.imgWidth)
+//			//盒子宽度
+			this.slideWidth = this.list.length*this.imgWidth
+			console.log(this.slideWidth)
+			this.autoplay()
+		}
+	})
+</script>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div id="demo">
+			<input type="text" value="" v-model='text'/>
+			<button @click="add(text)">提交</button>总计{{list.length}}个
+			<ul>
+				<li v-for='(item,index) in list'>
+					<span>{{item.name}}</span>
+					<span>年龄：{{ages}}</span>
+					<button @click="del(index)">删除</button>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+	new Vue({
+		el:'#demo',		//挂载点
+		data: {
+			text:'',
+			list:[{name:'张三',age:'20'},
+				{name:'李四',age:'23'}
+			]
+		},
+		methods:{
+			add:function(name){
+				if(name){
+					this.list.unshift({name:name,age:''});
+					this.text=''
+				}
+			},
+			del:function(index){
+				this.list.splice(index, 1);
+			}
+		},
+		computed:{
+			ages:function(){
+				var age = Math.ceil(Math.random()*50);
+				return age;
+			}
+		}
+	})
+</script>

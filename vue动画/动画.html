@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		li{
+			list-style: none;
+			float: left;
+			margin-right: 5px;
+		}
+		/*渐隐动画*/
+		/*完全离开的状态*/
+		.v-enter,.v-leave-to{
+			transform: translateX(30px);
+			opacity: 0;
+		}
+		/*完全显示的状态*/
+		.v-enter-to,.v-leave{
+			opacity: 1;
+		}
+		/*运动过程*/
+		.v-enter-active,.v-leave-active{
+			transition: all 0.5s;
+		}
+		
+		
+		
+		/*放大缩小1*/
+		/*完全离开的状态*/
+		.big-enter,.big-leave-to{
+			transform: scale(0);
+		}
+		/*完全显示的状态*/
+		.big-enter-to,.big-leave{
+			transform: scale(1.5);
+		}
+		/*运动过程*/
+		.big-enter-active,.big-leave-active{
+			transition: all 0.5s;
+		}
+		
+		
+		
+		/*放大缩小2*/
+		/*开始动画*/
+		.big2-enter-active,{
+			animation: anmintion 2s;
+		}
+		/*回去的动画*/
+		.big2-leave-active{
+			animation: anmintion 2s reverse;
+		}
+		@keyframes anmintion{
+			0%{
+				transform: scale(0);
+			}
+			5%{
+				transform: scale(1.5);
+			}
+			100%{
+				transform: scale(1);
+			}
+		}
+		
+		
+		
+		
+		
+		
+		/*增删动画*/
+		/*离开状态*/
+		.anlist-enter,.anlist-leave-to{
+			transform: translateY(30px);
+			opacity: 0;
+		}
+		/*进入状态*/
+		.anlist-enter-to,.anlist-leave{
+			transform: translateY(0);
+			opacity: 1;
+		}
+		/*运动过程*/
+		.anlist-enter-active,.anlist-leave-active{
+			transition: all 1s;
+		}
+		
+		
+		
+		
+		
+		
+		/*移动动画*/
+		.re{
+			transition: all 1s;
+		}
+	</style>
+	<body>
+		<div id="demo">
+			<div>
+				<button @click="add">增</button>
+				<button @click="del">删</button>
+				<ul style="display: flex;">
+					<!--动画组-->
+					<transition-group name="anlist" tag='li'>
+						<li v-for='(item,index) in lists' :key='item'>{{item}}</li>
+					</transition-group>
+				</ul>
+			</div>
+			<div>
+				<button @click="changshow">渐隐动画</button>
+				<transition>
+					<div v-show="show">hahahah</div>
+				</transition>
+			</div>
+			<div>
+				<button style="display: flex;" @click="changebig">放大缩小1</button>
+				<transition name='big'>
+				<p style="display: inline-block;height: 100px;width: 200px;" v-show="big">
+					坐在酿造忧愁的酒馆里 谁闭着眼
+					走在没有星光的灯火阑珊 与黑夜缠绵
+					拨开时光的脸 还是那个孤孤单单的少年
+					放纵纷扰的画面 那里人来人往渐行渐远
+					他总是小心翼翼 卑微着悲喜
+					他背坐愁城对未来自言自语</p>
+				</transition>
+			</div>
+			<div>
+				<button style="display: flex;" @click="changebig2">放大缩小2</button>
+				<transition name='big2'>
+				<p style="display: inline-block;height: 100px;width: 200px;" v-show="big2">
+					坐在酿造忧愁的酒馆里 谁闭着眼
+					走在没有星光的灯火阑珊 与黑夜缠绵
+					拨开时光的脸 还是那个孤孤单单的少年
+					放纵纷扰的画面 那里人来人往渐行渐远
+					他总是小心翼翼 卑微着悲喜
+					他背坐愁城对未来自言自语</p>
+				</transition>
+			</div>
+			<div>
+				<button @click="remove">移动</button>
+				<div class="re" :style="{height: '100px',width: '100px',background: 'pink',marginLeft:left+'px'}">移动</div>
+			</div>
+			<div>
+				<button @mouseenter="divshow(true)" @mouseleave="divshow(false)">移入显示</button>
+				<div style="height: 100px;width: 100px;background: aqua;" v-show="dis">移入显示</div>
+			</div>
+			<div class="tab">
+				<button>1</button>
+				<button>2</button>
+				<button>3</button>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+	new Vue({
+		el:'#demo',
+		data:{
+			show:true,
+			big:true,
+			big2:true,
+			lists:[1,2,3,4,5],
+			num:6,
+			addmun:true,
+			delnum:true,
+			left:0,
+			dis:true
+		},
+		methods:{
+			changshow:function(){
+				this.show = !this.show
+			},
+			changebig:function(){
+				this.big = !this.big
+			},
+			changebig2:function(){
+				this.big2 = !this.big2
+			},
+			add:function(){
+				let index = parseInt(Math.random()*this.lists.length)
+				this.lists.splice(index,0,++this.num)
+				this.addnum = !this.addnum
+			},
+			del:function(){
+				let index = parseInt(Math.random()*this.lists.length)
+				this.lists.splice(index,1)
+				this.delnum = !this.delnum
+			},
+			remove:function(){
+//				console.log(this)
+				this.left+=20
+			},
+			divshow:function(pos){
+				this.dis = pos
+			}
+		},
+		watch:{
+			
+		}
+	})
+</script>
